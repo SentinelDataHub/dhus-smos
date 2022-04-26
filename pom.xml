@@ -14,7 +14,7 @@
    <groupId>fr.gael.dhus</groupId>
    <artifactId>dhus-addon-smos</artifactId>
    <packaging>jar</packaging>
-   <version>1.0.3-osf</version>
+   <version>1.0.4-osf</version>
 
    <name>DHuS - SMOS addon</name>
 
@@ -22,7 +22,7 @@
       <dependency>
          <groupId>fr.gael.drb</groupId>
          <artifactId>drbx-cortex-topic-smos</artifactId>
-         <version>1.0.1</version>
+         <version>1.0.2</version>
       </dependency>
    </dependencies>
 
@@ -46,11 +46,10 @@
 
    <repositories>
       <repository>
-         <id>external dependencies</id>
-<!-- repository https://copernicus.serco.eu/repository/nexus/content/repositories/releases
-     used to proxy gael's resources requires credentials
-     Using alternative source repository. -->
-         <url>https://repository.gael-systems.com/repository/public</url>
+         <id>osf-public</id>
+         <name>OSF Public Repository</name>
+         <url>https://nexus-repository.onda-dias.eu/repository/Public_Repositories/</url>
+         <layout>default</layout>
       </repository>
    </repositories>
 
@@ -59,9 +58,7 @@
          <uniqueVersion>true</uniqueVersion>
          <id>osf-delivery</id>
          <name>OSF Releases Repository</name>
-         <url>
-            https://copernicus.serco.eu/repository/nexus/content/repositories/OSF_releases
-         </url>
+         <url>https://nexus-repository.onda-dias.eu/repository/OSF_releases/</url>
          <layout>default</layout>
       </repository>
    </distributionManagement>
